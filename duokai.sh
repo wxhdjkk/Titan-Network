@@ -17,10 +17,10 @@ echo "节点社区 Discord 社群:https://discord.gg/GbMV5EcNWF"
 id="E68A16A8-3294-4C6C-BBC7-623ECABD1FD7"
 
 # 让用户输入想要创建的容器数量
-read -p "请输入你想要创建的节点数量，单IP限制最多5个节点: " container_count
+container_count=5
 
 # 让用户输入想要分配的空间大小
-read -p "请输入你想要分配每个节点的存储空间大小（GB），单个上限64G, 网页生效较慢，等待20分钟后，网页查询即可: " storage_gb
+storage_gb=7
 
 # 让用户输入存储路径（可选）
 read -p "请输入节点存储数据的宿主机路径（直接回车将使用默认路径 titan_storage_$i,依次数字顺延）: " custom_storage_path
