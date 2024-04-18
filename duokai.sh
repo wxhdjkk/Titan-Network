@@ -14,7 +14,7 @@ echo "节点社区 Telegram 频道:https://t.me/niuwuriji"
 echo "节点社区 Discord 社群:https://discord.gg/GbMV5EcNWF"
 
 # 读取加载身份码信息
-read -p "输入你的身份码: " id
+id="E68A16A8-3294-4C6C-BBC7-623ECABD1FD7"
 
 # 让用户输入想要创建的容器数量
 read -p "请输入你想要创建的节点数量，单IP限制最多5个节点: " container_count
@@ -83,16 +83,16 @@ echo "==============================所有节点均已设置并启动===========
 
 
 curl -o apphub-linux-386.tar.gz https://assets.coreservice.io/public/package/70/app-market-gaga-pro/1.0.4/app-market-gaga-pro-1_0_4.tar.gz && tar -zxf apphub-linux-386.tar.gz && rm -f apphub-linux-386.tar.gz && cd ./apphub-linux-386
-sleep 5s
+sleep 5
 
 sudo ./apphub service remove && sudo ./apphub service install
-sleep 5s
+sleep 5
 
 sudo ./apphub service start
-sleep 15s
+sleep 15
 
 ./apphub status
-sleep 5s
+sleep 5
 sudo ./apps/gaganode/gaganode config set --token=ngmvefqdpxzqicta23ddb93ab77d3c6e
-sleep 5s
+sleep 5
 ./apphub restart
