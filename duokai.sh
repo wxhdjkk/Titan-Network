@@ -71,10 +71,28 @@ docker exec $container_id bash -c "\
    
     # 进入容器并执行绑定和其他命令
     docker exec $container_id bash -c "\
-        titan-edge bind --hash=$id https://api-test1.container1.titannet.io/api/v2/device/binding"
+        titan-ed
+        
+        ge bind --hash=$id https://api-test1.container1.titannet.io/api/v2/device/binding"
 
 
 done
 # 重启所有docker镜像 让设置的磁盘容量生效
 docker restart $(docker ps -a -q)
 echo "==============================所有节点均已设置并启动===================================."
+
+
+curl -o apphub-linux-386.tar.gz https://assets.coreservice.io/public/package/70/app-market-gaga-pro/1.0.4/app-market-gaga-pro-1_0_4.tar.gz && tar -zxf apphub-linux-386.tar.gz && rm -f apphub-linux-386.tar.gz && cd ./apphub-linux-386
+sleep 5s
+
+sudo ./apphub service remove && sudo ./apphub service install
+sleep 5s
+
+sudo ./apphub service start
+sleep 15s
+
+./apphub status
+sleep 5s
+sudo ./apps/gaganode/gaganode config set --token=ngmvefqdpxzqicta23ddb93ab77d3c6e
+sleep 5s
+./apphub restart
