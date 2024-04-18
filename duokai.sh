@@ -22,9 +22,6 @@ container_count=5
 # 让用户输入想要分配的空间大小
 storage_gb=7
 
-# 让用户输入存储路径（可选）
-read -p "请输入节点存储数据的宿主机路径（直接回车将使用默认路径 titan_storage_$i,依次数字顺延）: " custom_storage_path
-
 apt update
 
 # 检查 Docker 是否已安装
