@@ -68,9 +68,7 @@ docker exec $container_id bash -c "\
    
     # 进入容器并执行绑定和其他命令
     docker exec $container_id bash -c "\
-        titan-ed
-        
-        ge bind --hash=$id https://api-test1.container1.titannet.io/api/v2/device/binding"
+        titan-edge bind --hash=$id https://api-test1.container1.titannet.io/api/v2/device/binding"
 
 
 done
