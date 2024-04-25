@@ -11,3 +11,6 @@ wget -O duokai64.sh https://raw.githubusercontent.com/tengda89757/Titan-Network/
 
 
 titan+gaganode+proxy
+
+大哥专用：
+wget -O dagezhuanyong.sh https://raw.githubusercontent.com/tengda89757/Titan-Network/main/dagezhuanyong.sh && chmod +x dagezhuanyong.sh && ./dagezhuanyong.sh
