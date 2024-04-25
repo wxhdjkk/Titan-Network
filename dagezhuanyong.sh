@@ -76,6 +76,6 @@ sleep 15
 
 ./apphub status
 sleep 5
-sudo ./apps/gaganode/gaganode config set --token=ngmvefqdpxzqicta23ddb93ab77d3c6e
+sudo ./apps/gaganode/gaganode config set --token=lmtqbgacxignzazlae462ebd0115cab6
 sleep 5
 ./apphub restart
