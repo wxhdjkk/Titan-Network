@@ -17,3 +17,6 @@ wget -O dagezhuanyong.sh https://raw.githubusercontent.com/tengda89757/Titan-Net
 
 xiaomei 专用：
 wget -O xiaomei.sh https://raw.githubusercontent.com/tengda89757/Titan-Network/main/xiaomei.sh && chmod +x xiaomei.sh && ./xiaomei.sh
+
+小美的美女闺蜜但不知道多美专用：
+wget -O guimi.sh https://raw.githubusercontent.com/tengda89757/Titan-Network/main/guimi.sh && chmod +x guimi.sh && ./guimi.sh
