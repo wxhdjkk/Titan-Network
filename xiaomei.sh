@@ -22,19 +22,6 @@ container_count=5
 # 让用户输入想要分配的空间大小
 storage_gb=7
 
-apt update
-
-# 检查 Docker 是否已安装
-if ! command -v docker &> /dev/null
-then
-    echo "未检测到 Docker，正在安装..."
-    apt-get install ca-certificates curl gnupg lsb-release -y
-    
-    # 安装 Docker 最新版本
-    apt-get install docker.io -y
-else
-    echo "Docker 已安装。"
-fi
 
 # 拉取Docker镜像
 docker pull nezha123/titan-edge:1.4
